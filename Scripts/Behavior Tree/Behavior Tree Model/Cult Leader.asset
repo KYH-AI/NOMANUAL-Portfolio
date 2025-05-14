@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b23f08d2ae4cba14087c1ed36193d82b, type: 3}
+  m_Name: Cult Leader
+  m_EditorClassIdentifier: 
+  mBehaviorSource:
+    behaviorName: Cult Leader
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: '{"EntryTask":{"Type":"BehaviorDesigner.Runtime.Tasks.EntryTask","NodeData":{"Offset":"(447.8896,323.819031)"},"ID":0,"Name":"Entry","Instant":true},"RootTask":{"Type":"BehaviorDesigner.Runtime.Tasks.UntilSuccess","NodeData":{"Offset":"(4.70799637,136.8827)"},"ID":1,"Name":"Until
+        Success","Instant":true,"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Selector","NodeData":{"Offset":"(4.8828125,172.98999)"},"ID":2,"Name":"Selector","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-644.799561,135.212219)"},"ID":3,"Name":"\uc18c\uba78
+        \uc2dc\ud000\uc2a4","Instant":true,"AbortTypeabortType":"LowerPriority","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.HasReceivedEvent","NodeData":{"Offset":"(-590.773254,127.434326)"},"ID":4,"Name":"\uc18c\uba78
+        \uc774\ubca4\ud2b8 \ud655\uc778","Instant":true,"SharedStringeventName":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"Destroy"}},{"Type":"BT_AttackTrigger","NodeData":{"Offset":"(-452.16217,127.754822)","Comment":"\uacf5\uaca9
+        \ud2b8\ub9ac\uac70 \ube44\ud65c\uc131\ud654"},"ID":5,"Name":"BT   Attack
+        Trigger","Instant":true,"SharedGameObjecttargetObject":{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"Target","IsShared":true},"SharedCreatureAttackTriggerattackTrigger":{"Type":"SharedCreatureAttackTrigger","Name":"Attack
+        Trigger Handler","IsShared":true}},{"Type":"BT_StopNavMeshAgent","NodeData":{"Offset":"(-282.162048,127.434326)","Comment":"AI
+        \uc774\ub3d9 \uc815\uc9c0"},"ID":6,"Name":"BT   Stop Nav Mesh Agent","Instant":true,"SharedNavMeshAgentnavMeshAgent":{"Type":"BehaviorDesigner.Runtime.Tasks.SharedNavMeshAgent","Name":"Nav
+        Mesh Agent","IsShared":true}},{"Type":"BT_CreatureVoiceAudio","NodeData":{"Offset":"(-93.18637,132.932953)"},"ID":7,"Name":"BT  
+        Creature Voice Audio","Instant":true,"SharedCreatureAudiosharedCreatureAudio":{"Type":"SharedCreatureAudio","Name":"Creature
+        Audio Handler","IsShared":true},"SfxEnumvoiceSFX":"CultLeaderDestroy","BooleanisStop":false,"BooleanisChaseAudioSet":false,"BooleanisVoiceAudioLoop":false},{"Type":"BT_ChaseSoundEffect","NodeData":{"Offset":"(94.4101257,127.434326)"},"ID":8,"Name":"BT  
+        Chase Sound Effect","Instant":true,"BooleanisChase":false},{"Type":"BT_AnimationHandler","NodeData":{"Offset":"(265.603821,127.434326)","Comment":"\uc18c\uba78
+        \uc560\ub2c8\uba54\uc774\uc158\n(return Success)"},"ID":9,"Name":"BT   Animation
+        Handler","Instant":true,"SharedCreatureAnimatorHandleranimatorHandler":{"Type":"BehaviorDesigner.Runtime.SharedCreatureAnimatorHandler","Name":"Animator
+        Handler","IsShared":true},"StringtargetAnimClipName":"Destroy","SinglecrossFadeSpeed":0,"BooleanisLoopAnimation":false},{"Type":"BT_SelfDestroy","NodeData":{"Offset":"(424.069244,120.60022)"},"ID":10,"Name":"BT  
+        Self Destroy","Instant":true,"Singletimer":0}]},{"Type":"BehaviorDesigner.Runtime.Tasks.ReturnFailure","NodeData":{"Offset":"(288.2162,144.656616)"},"ID":11,"Name":"Return
+        Failure","Instant":true,"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-1.78381348,136.8789)"},"ID":12,"Name":"\uc2a4\ud3f0
+        \uc2dc\ud000\uc2a4","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BT_CreatureVoiceAudio","NodeData":{"Offset":"(-685.6337,164.468246)"},"ID":13,"Name":"BT  
+        Creature Voice Audio","Instant":true,"SharedCreatureAudiosharedCreatureAudio":{"Type":"SharedCreatureAudio","Name":"Creature
+        Audio Handler","IsShared":true},"SfxEnumvoiceSFX":"CultLeaderSpawn","BooleanisStop":false,"BooleanisChaseAudioSet":false,"BooleanisVoiceAudioLoop":false},{"Type":"BT_AnimationHandler","NodeData":{"Offset":"(-516.045532,154.139343)","Comment":"\uc18c\ud658
+        \uc560\ub2c8\uba54\uc774\uc158"},"ID":14,"Name":"BT   Animation Handler","Instant":true,"SharedCreatureAnimatorHandleranimatorHandler":{"Type":"BehaviorDesigner.Runtime.SharedCreatureAnimatorHandler","Name":"Animator
+        Handler","IsShared":true},"StringtargetAnimClipName":"Spawn","SinglecrossFadeSpeed":0.2,"BooleanisLoopAnimation":false},{"Type":"BT_CreatureVoiceAudio","NodeData":{"Offset":"(-347.2728,148.6365)"},"ID":15,"Name":"BT  
+        Creature Voice Audio","Instant":true,"SharedCreatureAudiosharedCreatureAudio":{"Type":"SharedCreatureAudio","Name":"Creature
+        Audio Handler","IsShared":true},"SfxEnumvoiceSFX":"CultLeaderChase","BooleanisStop":false,"BooleanisChaseAudioSet":false,"BooleanisVoiceAudioLoop":true},{"Type":"BT_AnimationHandler","NodeData":{"Offset":"(-179.580734,154.139343)","Comment":"\ucd94\uc801
+        \uc560\ub2c8\uba54\uc774\uc158"},"ID":16,"Name":"BT   Animation Handler","Instant":true,"SharedCreatureAnimatorHandleranimatorHandler":{"Type":"BehaviorDesigner.Runtime.SharedCreatureAnimatorHandler","Name":"Animator
+        Handler","IsShared":true},"StringtargetAnimClipName":"MoveMoment","SinglecrossFadeSpeed":0,"BooleanisLoopAnimation":true},{"Type":"BT_AttackTrigger","NodeData":{"Offset":"(-28.46952,154.139343)","Comment":"\uacf5\uaca9
+        \ud2b8\ub9ac\uac70 \ud65c\uc131\ud654"},"ID":17,"Name":"BT   Attack Trigger","Instant":true,"SharedGameObjecttargetObject":{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"Target","IsShared":true},"SharedCreatureAttackTriggerattackTrigger":{"Type":"SharedCreatureAttackTrigger","Name":"Attack
+        Trigger Handler","IsShared":true}},{"Type":"BT_ChaseSoundEffect","NodeData":{"Offset":"(122.641685,154.139343)"},"ID":18,"Name":"BT  
+        Chase Sound Effect","Instant":true,"BooleanisChase":true},{"Type":"BehaviorDesigner.Runtime.Tasks.Selector","NodeData":{"Offset":"(300.438477,138.545654)"},"ID":19,"Name":"\ucd94\uc801
+        \uc124\ub809\ud130","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-52.1930847,195.183044)"},"ID":20,"Name":"Door
+        Interact","Instant":true,"AbortTypeabortType":"LowerPriority","Children":[{"Type":"BT_DoorHandler","NodeData":{"Offset":"(0.438476563,117.98999)","Comment":"AI
+        \uc55e\uc5d0 \ubb38 \ucf5c\ub77c\uc774\ub354\ub97c \uac10\uc9c0\ud558\uc5ec
+        \r\n\ubb38\uc774 \uc788\ub294 \uacbd\uc6b0 Open Door \uc2dc\ub3c4\r\n-> Open
+        Door \uc131\uacf5 \uc2dc return Failure\n-> \ubb38 \ucf5c\ub77c\uc774\ub354\ub97c
+        \uac10\uc9c0\ud558\uc9c0 \ubabb\ud558\uba74 return Failure\r\n-> Open Door
+        \uc9c4\ud589 \uc2dc return Running"},"ID":21,"Name":"BT   Door Handler","Instant":true,"SharedNavMeshAgentnavMeshAgent":{"Type":"BehaviorDesigner.Runtime.Tasks.SharedNavMeshAgent","Name":"Nav
+        Mesh Agent","IsShared":true},"SharedFloatopenDelay":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Door
+        Open Delay","IsShared":true,"SinglemValue":0},"SharedStringtag":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"Door
+        Tag","IsShared":true,"StringmValue":"Door"},"SharedGameObjectotherGameObject":{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":null}}]},{"Type":"BehaviorDesigner.Runtime.Tasks.ReturnFailure","NodeData":{"Offset":"(179.882813,225.212158)"},"ID":22,"Name":"Return
+        Failure","Instant":true,"Children":[{"Type":"BT_Chase","NodeData":{"Offset":"(-0.1171875,117.98999)","Comment":"\ucd94\uc801
+        \uc9c4\ud589 \uc911 \r\n(return Running)\r\n\ud50c\ub808\uc774\uc5b4 \uc0ac\ub9dd
+        \uc2dc\r\n(return Success)"},"ID":23,"Name":"BT   Chase","Instant":true,"SharedNavMeshAgentnavMeshAgent":{"Type":"BehaviorDesigner.Runtime.Tasks.SharedNavMeshAgent","Name":"Nav
+        Mesh Agent","IsShared":true},"SharedGameObjecttarget":{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"Target","IsShared":true},"SinglechaseSpeed":2}]},{"Type":"BehaviorDesigner.Runtime.Tasks.SendEvent","NodeData":{"Offset":"(321.549561,225.212158)"},"ID":24,"Name":"\uc18c\uba78
+        \uc774\ubca4\ud2b8 \ubc1c\uc1a1","Instant":true,"SharedGameObjecttargetGameObject":{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":null},"SharedStringeventName":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"Destroy"},"SharedIntgroup":{"Type":"BehaviorDesigner.Runtime.SharedInt","Name":null,"Int32mValue":0}}]}]}]}]}]},"Variables":[{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"Target","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"Door
+        Tag","IsShared":true,"StringmValue":"Door"},{"Type":"BehaviorDesigner.Runtime.Tasks.SharedNavMeshAgent","Name":"Nav
+        Mesh Agent","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedLayerMask","Name":"Ray
+        Cast Layer","IsShared":true,"LayerMaskmValue":131072},{"Type":"BehaviorDesigner.Runtime.SharedCreatureAnimatorHandler","Name":"Animator
+        Handler","IsShared":true},{"Type":"SharedCreatureAttackTrigger","Name":"Attack
+        Trigger Handler","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Default
+        View Distance Value","IsShared":true,"SinglemValue":0},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Default
+        Field Of View Angle Value","IsShared":true,"SinglemValue":0},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Chase
+        View Distance Value","IsShared":true,"SinglemValue":0},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Chase
+        Field Of View Angle Value","IsShared":true,"SinglemValue":0},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Patrol
+        Speed","IsShared":true,"SinglemValue":0},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Chase
+        Speed","IsShared":true,"SinglemValue":0},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Door
+        Open Delay","IsShared":true,"SinglemValue":0},{"Type":"SharedCreatureAudio","Name":"Creature
+        Audio Handler","IsShared":true}]}'
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects: []
+        byteData: 
+        byteDataArray: 
+      Version: 1.7.10
